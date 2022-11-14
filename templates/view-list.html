@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>View List!</title>
+        <link rel='stylesheet' href='/static/bootstrap.min.css'>
+        <link rel='stylesheet' href='/static/styles.css'>
+    </head>
+    <body>
+        <h2>Todo List</h2>
+        {% for todo in todo_list %}
+            <br/>
+            <h4>{{todo.title}}</h4>
+            <p>{{todo.description}}</p>
+        {% endfor %}
+    </body>
+</html>
